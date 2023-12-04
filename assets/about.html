@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Heartbeat Stay</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+						<div id="intro">
+						<img id="HBS"src="images/rounded HBS Final.png" alt="" >
+						<h1>Home is where the Heart is.</h1>
+						<h3>Unwind. Be Present. Experince Extraodinary.
+
+						</h3>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="about.html" class="logo">Heartbeat Stay</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="about.html">About Us</a></li>
+							<li><a href="amenities.html">Amenities</a></li>
+							<li><a href="partner.html">Partner With Us / (FAQ)</a></li>
+							<li><a href="reachout.html">Reach Out</a></li>
+						</ul>
+						
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+								<h2><a href="#">A Bit About Heartbeat</a></h2>
+									<h4>Heartbeat Stay transforms Short Term Rentals, bringing our guests a quality travel experience. We offer apartments, lofts, and vacation homes to professional travelers in the most visited neighborhoods. Our stays provide hotel-like amenities, such as travel-size toiletries, towels, & premium linen for every stay, along with all the advantages of a home, like spacious kitchens and comfortable living spaces. Our guests find comfort, quality, and safety at every stay. Our local teams at each location work hard to maintain a consistent quality experience for each guest. Heartbeat Stay is available 24/7 via text or phone call to answer any questions, concerns, or accommodations. Are you looking to stay with us for a month or longer? We welcome you home. Heartbeat Stay offers 30+ night stays to accommodate the corporate/business traveler, long-haul vacationer, and digital nomad. Located in Los Angeles, Heartbeat Stay offers travelers extended stay accommodations with our fully-furnished apartment suites that seamlessly integrate work and play while providing all the comforts of home.</h4>
+								</header>
+								<span><a href="#" class="image fit"><img src="images/yellow room.png" alt="" /></a></span>
+								<a></a>
+								<ul class="actions special">
+									<li></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+							<article>
+								<header>
+									<h2><a href="#">When it comes to comfort, the choice is yours</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/girl smiling.png" alt="" /></a>
+									<h5>Designed to be a sanctuary in the middle of the city. From spacious lofts to beaming homes, Heartbeat Stay leaves the choice in your hands.</h5>
+									<ul class="actions special">
+										<li></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span></span>
+										<h2><a href="#">No Ordinary Day At Heartbeat Stay</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Stacked Stones.png" alt="" /></a>
+									<h5>A stay with us is more than a room. Explore a day in the life of a community of artists, innovators and travelers.</h5>
+									<ul class="actions special">
+										<li></li>
+									</ul>
+								</article>
+						</section>
+
+							<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form onsubmit="sendEmail(); reset(); return false;" method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="phone">Phone</label>
+										<input type="text" name="phone" id="phone" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Los Angeles, California</h3>
+								<h5>We are a california company that serves guests from all over the globe.</h5>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+1 (213) 205- 1440</a></p>
+							</section>
+							<section>
+								<h3>Front Desk</h3>
+								<p><a href="#">stayheartbeat@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Inquires</h3>
+								<p><a href="#">erinmarie@heartbeatstay.com</a></p>
+							</section>
+							</section>
+					</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				function sendEmail(){
+					Email.send({
+    			SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    			To : 'stayheartbeat@gmail.com',
+    			From : document.getElementById("email").value,
+    			Subject : "New Contact Form Submition",
+    			Body : "Name:" + document.getElementById("name").value
+								+ "<br> Email:" + document.getElementById("email").value
+								+ "<br> Phone:" + document.getElementById("phone").value
+								+ "<br> Message:" + document.getElementById("message").value
+					}).then(
+  				message => alert("Thank you, your message was sent successfully.")
+);
+				}
+
+			</script>
+
+	</body>
+</html>
